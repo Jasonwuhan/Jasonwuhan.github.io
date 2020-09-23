@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximun-scale=1.0, user-scalable=1">
+    <meta name="JasonWu">
+    <meta http-equiv="Content-Language" content="zh-cn">
+    <meta name="keywords" content="jasonwu,JasonWu的个人网站，jasonwu的作品集，jason's portfolio">
+    <meta name="description" content="熟悉Web端、移动端设计规范和表现方法，对交互层面中的前端技术实现具有强烈兴趣">
+    <link rel="stylesheet" type="text/css" href="css/k11.css">
+    <link rel="stylesheet" type="text/css" href="css/fixbutton.css">
+    <script src="js/jquery-3.1.1.min.js" type="text/javascript"></script>
+    <script src="js/fixbutton.js" type="text/javascript"></script>
+
+
+    <title>K11 Select武汉</title>
+</head>
+<script>
+    resetrem();
+    //切换屏幕 （横屏竖屏）
+    window.addEventListener("orientationchange", resetrem);
+    //resize：屏幕的大小发生改变就触发监听事件resetrem
+    window.addEventListener("resize", resetrem);
+
+    function resetrem() {
+        var html = document.querySelector("html"); //获取到html元素
+        var width = html.getBoundingClientRect().innerwidth; //获取html的宽度
+        if (width >= 1280) {
+            html.style.fontSize = width / 100 + "px";
+        } else if (width > 768 && width < 1280) {
+            html.style.fontSize = width / 70 + "px";
+        } else if (width < 768) {
+            html.style.fontSize = 16 + "px";
+        }
+    }
+</script>
+
+<body>
+    <header id="header">
+        <img id="menuBG" src="img/k11/menu-bg.png" alt="">
+    </header>
+    <section id="menuIntro">
+        <article class="introLeft">
+            <img src="img/k11/k11-logo.png" alt="">
+            <h1>光谷K11购物艺术中心开业引流项目</h1>
+            <p>光谷K11购物艺术中心，坐落于武汉光谷核心，定位“时髦、雅致、轻奢”，打造“云、湖泊、瀑布”科技互动装置，革新性的带来5.4万方“博物馆零售”新体验。</p>
+            <p>作为华中首个购物艺术中心，馆内外还分布有九件由国内外艺术家创作的艺术典藏，供顾客近距离观赏体验。2017年11月2日，光谷K11，以“艺术主义”、“潮流先锋”、“未来生活”为核心，开启全新创艺生活体验之旅。</p>
+            <p>该项目结合K11各大入驻品牌和艺术典藏(艺术装置)，通过微信公众号二级菜单进入SocialPoint系统和两款互动游戏完成互动任务，并结合线下互动屏进行互动获取Social Point(互动积分)，通过Social Point可以兑换丰富好礼，实现成功引流。</p>
+        </article>
+        <article class="introRight">
+            <img src="img/k11/k11-icon.png" alt="">
+            <div>
+                <h2>client</h2>
+                <p>K11 Select武汉</p>
+            </div>
+            <div>
+                <h2>year</h2>
+                <p>2017.09</p>
+            </div>
+            <div>
+                <h2>links</h2>
+                <p>https://wh.k11.com.cn/</p>
+            </div>
+        </article>
+    </section>
+    <div id="k11">
+        <div class="socialPoint">
+            <div class="mainPic1">
+                <div class="pic1Content">
+                    <img src="img/k11/pic1title.png" alt="">
+                    <p>1、左边版本头部大面积纯色设计太呆板，可否灵动活泼点?把头像加上，使用外国人头像再看效果。<br /> 2、左边版本游戏区域的ICON换成技术部稍后做完的场景图。
+                        <br /> 3、主色调建议以中间版本的淡金色为主，与K11相吻合。
+                        <br /> 4、整个背景色是白色太枯燥不活泼，我们这个设计不是一个app更多是一个线上游戏的H5，整体风格需要偏活泼点。
+                    </p>
+                    <img src="img/k11/pic1content.png" alt="">
+                </div>
+            </div>
+            <div class="mainPic2">
+                <div class="pic2Content">
+                    <h1>产品概述<span>Product Overview</span></h1>
+                    <p>关键词：开心、潮流、社交<br /> 针对人群：大学生、年轻白领
+                        <br /> 人群特点：喜欢线上互动、乐于分享、爱玩乐、追潮流。
+                        <br /> 通过完成线互动任务（K11创艺之旅、《B》感恩之旅、“鱼”你在一起、植物的秘密），都将增加Social Point值可以兑换K11专属礼包,例如3小时停车场券、电影票、品牌优惠券，艺术展门票、华为蓝牙耳机等。
+                    </p>
+                    <img src="img/k11/socialPoint.svg" alt="">
+                    <div class="pinterest">
+                        <div class="piclt">
+                            <img src="img/k11/1.png" alt="">
+                            <img src="img/k11/4.png" alt="">
+                            <img src="img/k11/7.gif" alt="">
+                            <img src="img/k11/10.png" alt="">
+                        </div>
+                        <div class="picmd">
+                            <img src="img/k11/2.png" alt="">
+                            <img src="img/k11/5.png" alt="">
+                            <img src="img/k11/8.png" alt="">
+                        </div>
+                        <div class="picgt">
+                            <img src="img/k11/3.png" alt="">
+                            <img src="img/k11/6.png" alt="">
+                            <img src="img/k11/9.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- 《B》感恩之旅:mainPic3 - mainPic7 -->
+        <div class="b">
+            <div class="mainPic3">
+                <img class="pic3txt" src="img/k11/pic2txt.png" alt="">
+                <img class="pic3banner" src="img/k11/pic2banner.png" alt="">
+            </div>
+            <div class="mainPic4">
+                <div class="pic4Content">
+                    <img class="pic4title" src="img/k11/pic2title.png" alt="">
+                    <div class="pic4txt">
+                        <h1>产品概述<span>Product Overview</span></h1>
+                        <p>K11《B》感恩之旅是一个集互动屏+crm+H5联动的互动方案。通过线下大屏玩游戏互动，奖励Social Point(互动积分)，能够推广关注K11公众号并吸引用户到武汉K11线下消费。该方案是此次开业活动中的重要一环。<br /> 用户在K11商场经过熊一体机时，熊讲述故事并且需要用户帮助（收集爱心），用户帮助熊获得爱心，并且开始游戏（闯关）。通过闯关获得足够爱心，游戏结束。与熊合影，并且微信扫描二维码，进入H5，用户获得Social Point(互动积分)。
+                        </p>
+                    </div>
+                    <div class="pic4txt pic4txt-grid">
+                        <div class="pic4txt-lt">
+                            <h1>需求要点<span>Requirements Document</span></h1>
+                            <p>
+                                1. 硬件：手机、互动屏、Kinect体感控制器<br /> 2. 核心元素：艺术装置的廖国核-B，艺术品“熊”有关联（不可直接使用此熊形象）<br /> 3. UI风格：L2楼层是以儿童及文创类品牌为主，此互动UI呈现方面需要与K11品牌调性匹配。<br /> 4. 交互场景：以儿童亲子体验为主，在大屏进行简单易操作、短时高效的互动体验。<br /> 5. 分享功能：拍照，父母喜欢让孩子与可爱的动物、植物等场景下拍照。<br />                                6. 排名功能：可以通过游戏成绩的高低刺激用户反复参与进来，并根据游戏成绩获得互动积分。<br /> 7. 玩法难易度：分为“低中高”，增强游戏者的挑战性和趣味度。
+                            </p>
+                        </div>
+                        <div class="pic4txt-gt">
+                            <img src="img/k11/pic2bear.png" alt="">
+                        </div>
+                    </div>
+                    <img class="pic4content" src="img/k11/pic2content.png" alt="">
+                    <div class="pic4note">
+                        <p>说明：</p>
+                        <p>1. 关于Social Point的运用，K11 Central团队 & CRM团队会提供参考值，需要考虑通过CRM+系统的消息通知模板运用，提升用户的互动粘性或者交叉销售。<br /> 2. 因为此互动点位处于电梯厅出来“人流侧向位置”，需要考虑是否增加“感应”触碰，引发经过人群的关注来参与互动？例如可以考虑考虑结合“微信扫封面方式”引导客人扫描艺术品进行交互，引导来到触摸屏做互动.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mainPic5">
+                <div class="pic5Content">
+                    <div class="pic5txt">
+                        <h1>B</h1>
+                        <h2>装置</h2>
+                        <p>廖国核的这件雕塑作品“b”有意地玩味了微信上流行的中老年表情包“因为有你，心存感激”。<br /> “b”来自于英文的“because”，即中文的“因为”。在这个表情里，”因“字与”心“字共同组成了一个”恩“字，因而”b”字指代的内容在这个表情里尤为重要。”因为有你（Because of You）“不仅体现了在日益复杂的时代下人与人之间的相互扶持，令其表达的内容在当今冷漠的都市生活中显得愈发纯净而温暖。<br /> 廖国核,1977年出生于印度加尔各答，毕业于圣塔芭芭拉加州大学机械制图专业，以及湖南师范大学特殊教育专业，现居住并工作于长沙。
+                        </p>
+                    </div>
+                </div>
+                <img class="pic5bg" src="img/k11/pic2b.png" alt="">
+            </div>
+            <div class="mainPic6">
+                <div class="pic6Content">
+                    <h1>《B》感恩之旅 H5界面<span>H5 Design</span></h1>
+                    <div class="pinterest">
+                        <div class="piclt">
+                            <img src="img/k11/11.png" alt="">
+                            <img src="img/k11/14.png" alt="">
+                            <img src="img/k11/bearshow.gif" alt="">
+                        </div>
+                        <div class="picmd">
+                            <img src="img/k11/12.png" alt="">
+                            <img src="img/k11/15.png" alt="">
+                            <img src="img/k11/18.png" alt="">
+                        </div>
+                        <div class="picgt">
+                            <img src="img/k11/13.png" alt="">
+                            <img src="img/k11/16.png" alt="">
+                            <img src="img/k11/19.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mainPic7">
+                <div class="pic7Content">
+                    <img class="paste" src="img/k11/pic2paste.png" alt="">
+                    <h1>《B》感恩之旅 互动屏原画(美术组)<span>The Original Painting Design</span></h1>
+                    <div class="paintingDesign">
+                        <img src="img/k11/page1e.png" alt="">
+                        <img src="img/k11/page2c.png" alt="">
+                        <img src="img/k11/page3b.png" alt="">
+                        <img src="img/k11/page4c.png" alt="">
+                        <img src="img/k11/page5a.png" alt="">
+                        <img src="img/k11/page6a.png" alt="">
+                        <img src="img/k11/page7d.png" alt="">
+                        <img src="img/k11/bear.gif" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--  “鱼”你在一起:mainPic3 - mainPic7 -->
+        <div class="fish">
+            <div class="mainPic3">
+                <img class="pic3txt" src="img/k11/pic3txt.png" alt="">
+                <img class="pic3banner" src="img/k11/pic3banner.png" alt="">
+            </div>
+            <div class="mainPic4">
+                <div class="pic4Content">
+                    <img class="pic4title" src="img/k11/pic3title.png" alt="">
+                    <div class="pic4txt">
+                        <h1>产品概述<span>Product Overview</span></h1>
+                        <p>K11“鱼”你在一起也是一个集互动屏+crm+H5联动的互动方案。游戏主要讲述鱼与魔法的故事。玩家通过体感控制海底世界的鱼，通过重重关卡穿过魔法之书，进入魔法世界。通关微信扫描二维码，进入H5页面，获取Social Point(互动积分)和神秘拼图碎片。
+                        </p>
+                    </div>
+                    <div class="pic4txt">
+                        <h1>需求要点<span>Requirements Document</span></h1>
+                        <p>1. 硬件：手机、互动屏、Kinect体感控制器。<br /> 2. 核心元素：考虑与湖泊装置有关联的故事场景，不太建议很复杂的交互。<br /> 3. ui风格：B1楼层业态：咖啡博物馆、食集；针对人群为年轻人。<br /> 4. 具有年轻元素：可考虑加入运势、星座、贴标签等元素增加年轻人分享率。<br /> 5. 增加互动感：互动内容可考虑发生在mall内的2人以上（如情侣、闺蜜、朋友等）。<br /> 6.在用户选择的过程中可以考虑埋入消费者行为tagging元素，如购买兴趣、活动兴趣等。
+                            <br />
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="mainPic6">
+                <div class="pic6Content">
+                    <h1>“鱼”你在一起 H5界面<span>H5 Design</span></h1>
+                    <div class="pinterest">
+                        <div class="piclt">
+                            <img src="img/k11/20.png" alt="">
+                            <img src="img/k11/23.png" alt="">
+                            <img src="img/k11/fishshow.gif" alt="">
+                        </div>
+                        <div class="picmd">
+                            <img src="img/k11/21.png" alt="">
+                            <img src="img/k11/24.png" alt="">
+                            <img src="img/k11/26.png" alt="">
+
+                        </div>
+                        <div class="picgt">
+                            <img src="img/k11/22.png" alt="">
+                            <img src="img/k11/25.png" alt="">
+                            <img src="img/k11/27.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mainPic7">
+                <div class="pic7Content">
+                    <img class="paste" src="img/k11/pic3paste.png" alt="">
+                    <h1>“鱼”你在一起 互动屏原画(美术组)<span>The Original Painting Design</span></h1>
+                    <img class="fishDraw" src="img/k11/page8r.png" alt="">
+                </div>
+            </div>
+        </div>
+        <!--  植物的秘密:mainPic3 - mainPic7 -->
+        <div class="farm">
+            <div class="mainPic3">
+                <img class="pic3txt1" src="img/k11/pic4txt.png" alt="">
+                <img class="pic3banner" src="img/k11/pic4banner.png" alt="">
+            </div>
+            <div class="mainPic4">
+                <div class="pic4Content">
+                    <img class="pic4title" src="img/k11/pic4title.png" alt="">
+                    <div class="pic4txt">
+                        <h1>产品概述<span>Product Overview</span></h1>
+                        <p>传统的线下植物种植的四大限制：种植面积有限，植物类型有限，种植周期较长，可互动频次较低，参与人数有限。可否突破上述限制，让从土地里“转化”到线上移动端，再由线上移动端“转化”到土地里？<br /> 在都市农庄里开展线下种植课程，客人自带植物参与活动，并将客人线下种植的植物“传送”至线上，引导参与线上互动，通过线上渠道维护客人种植后的粘性，定期唤醒，同时嫁接各项产品，成熟之后曲线下农庄将有机会领取惊喜奖品。
+                        </p>
+                    </div>
+                    <div class="pic4txt">
+                        <h1>需求要点<span>Requirements Document</span></h1>
+                        <p>1. ui风格：以亲子体验为主，风格跟其他项目保持大体一致，呈现方面需要与K11品牌调性匹配。<br /> 2. 交互场景：手机H5虚拟种植植物，与孩子一起学习植物种植小知识。<br /> 3. 营养包：用Social Point在线上H5中购买营养包加速成长。<br /> 4. CRM+系统：根据其过往记录，推送其返场当天适合的信息（优惠券、K11活动等），引导其消费。 </p>
+                    </div>
+                </div>
+            </div>
+            <div class="mainPic5">
+                <div class="pic5Content">
+                    <div class="pic5txt">
+                        <h2>薄荷</h2>
+                        <p>薄荷，土名叫“银丹草”，多生于山野湿地河旁，根茎横生地下，多生于2100米海拔高度，但也可在3500米海拔上生长，是一种有特种经济价值的芳香作物。 使用方式：薄荷煎汤代茶。可做烹饪原料，亦可用作香调料。
+                        </p>
+                    </div>
+                </div>
+                <img class="pic5bg" src="img/k11/pic4farm.png" alt="">
+            </div>
+            <div class="mainPic6">
+                <div class="pic6Content">
+                    <h1>植物的秘密 H5界面<span>H5 Design</span></h1>
+                    <div class="pinterest1">
+                        <img src="img/k11/28.png" alt="">
+                        <img src="img/k11/29.png" alt="">
+                        <img src="img/k11/30.png" alt="">
+                        <img src="img/k11/31.png" alt="">
+                        <img src="img/k11/32.png" alt="">
+                        <img src="img/k11/33.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="fixbutton">
+        <div class="fixbutton-wrap">
+            <a href="web.html"><img src="img/prev.png" alt=""></a>
+            <a href="xiwuzao.html"><img src="img/next.png" alt=""></a>
+        </div>
+    </footer>
+</body>
+<!-- 头部适配 -->
+<script>
+    restheight();
+    window.addEventListener("orientationchange", restheight);
+    window.addEventListener("resize", restheight);
+
+    function restheight() {
+        var winWidth = $(window).width(); //获取当前窗口的宽度跟html的宽度相区分
+        var winHeight = $(window).height(); //获取当前窗口的宽度跟html的宽度相区分
+        if (winWidth >= 960) {
+            $("#menuIntro").css("padding-top", winWidth / 10);
+            $("#menuIntro").css("padding-bottom", winWidth / 10);
+        } else if (winWidth < 960) {
+            $("#menuIntro").css("padding-top", winWidth / 20);
+            $("#menuIntro").css("padding-bottom", winWidth / 20);
+        }
+        if (winWidth >= winHeight) {
+            // console.log(winWidth);
+            $("#header").removeClass();
+            $("#header").addClass("headerH");
+            $("#menuBG").removeClass();
+            $("#menuBG").addClass("bgH");
+
+            $(window).resize(function() {
+                winWidth = $(window).width();
+                winHeight = $(window).height();
+                $("#header").removeClass();
+                $("#header").addClass("headerH");
+                $("#menuBG").removeClass();
+                $("#menuBG").addClass("bgH");
+            });
+        } else if (winWidth <= winHeight) {
+            $("#header").removeClass();
+            $("#header").addClass("headerV");
+            $("#menuBG").removeClass();
+            $("#menuBG").addClass("bgV");
+
+            $(window).resize(function() {
+                winWidth = $(window).width();
+                winHeight = $(window).height();
+                $("#header").removeClass();
+                $("#header").addClass("headerV");
+                $("#menuBG").removeClass();
+                $("#menuBG").addClass("bgV");
+            });
+        }
+    }
+</script>

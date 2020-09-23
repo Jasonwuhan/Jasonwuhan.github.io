@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximun-scale=1.0, user-scalable=1">
+    <meta name="JasonWu">
+    <meta http-equiv="Content-Language" content="zh-cn">
+    <meta name="keywords" content="jasonwu,JasonWu的个人网站，jasonwu的作品集，jason's portfolio">
+    <meta name="description" content="熟悉Web端、移动端设计规范和表现方法，对交互层面中的前端技术实现具有强烈兴趣">
+    <link rel="stylesheet" type="text/css" href="css/web.css">
+    <link rel="stylesheet" type="text/css" href="css/fixbutton.css">
+    <script src="js/jquery-3.1.1.min.js" type="text/javascript"></script>
+    <script src="js/fixbutton.js" type="text/javascript"></script>
+
+
+    <title>web外包</title>
+</head>
+<script>
+    resetrem();
+    //切换屏幕 （横屏竖屏）
+    window.addEventListener("orientationchange", resetrem);
+    //resize：屏幕的大小发生改变就触发监听事件resetrem
+    window.addEventListener("resize", resetrem);
+
+    function resetrem() {
+        var html = document.querySelector("html"); //获取到html元素
+        var width = html.getBoundingClientRect().innerwidth; //获取html的宽度
+        if (width >= 1200) {
+            html.style.fontSize = width / 100 + "px";
+        } else if (width > 960 && width < 1200) {
+            html.style.fontSize = width / 70 + "px";
+        } else if (width < 960) {
+            html.style.fontSize = 16 + "px";
+        }
+    }
+</script>
+
+<body>
+    <header id="header">
+        <img id="menuBG" src="img/web/menu-bg.png" alt="">
+    </header>
+    <div id="introWrap">
+        <section class="menuIntro">
+            <article class="introLeft">
+                <h1>网页改版</h1>
+                <p>
+                    客户：公司产品工艺升级，老版网站无法体现高端钢琴的工艺与品牌底蕴，缺乏钢琴的高贵稳重感。
+                </p>
+                <p>
+                    内容：没能突出企业的文化底蕴和产品特色<br /> BANNER：没有体现产品工艺，不够突出主题
+                    <br /> 文字排版：不合理，较生硬
+                    <br /> 新闻版块：占比大，过于侧重
+                </p>
+            </article>
+            <article class="introRight">
+                <div>
+                    <h2>client</h2>
+                    <p>海伦钢琴</p>
+                </div>
+                <div>
+                    <h2>year</h2>
+                    <p>2016.09</p>
+                </div>
+                <div>
+                    <h2>links</h2>
+                    <p>http://www.hailunpiano.com/</p>
+                </div>
+            </article>
+        </section>
+
+    </div>
+    <div id="web">
+        <div class="mainPic1">
+            <img src="img/web/hailun1.png" alt="">
+            <img src="img/web/hailun2.png" alt="">
+        </div>
+        <div class="mainPic2">
+            <div class="introWrap1">
+                <section class="menuIntro menuIntro1">
+                    <article class="introLeft">
+                        <h1>首页改版</h1>
+                        <p>
+                            太美医疗科技将自身定位为生命科学产业数字化运营平台，业务覆盖医药研发、药物警戒、医药营销和市场准入等领域。 按照客户提供的整体框架原型，并遵循公司未来走向，以科技、专业、为主题元素进行再设计。
+                        </p>
+                    </article>
+                    <article class="introRight">
+                        <div>
+                            <h2>client</h2>
+                            <p>太美医疗科技</p>
+                        </div>
+                        <div>
+                            <h2>year</h2>
+                            <p>2018.02</p>
+                        </div>
+                        <div>
+                            <h2>links</h2>
+                            <p>https://www.taimeitech.com/</p>
+                        </div>
+                    </article>
+                </section>
+            </div>
+            <div class="picWrap">
+                <img src="img/web/yiliao.png" alt="">
+            </div>
+        </div>
+        <div class="mainPic2">
+            <div class="introWrap2">
+                <section class="menuIntro menuIntro1">
+                    <article class="introLeft">
+                        <h1>首页改版</h1>
+                        <p>客户要求以LOGO配色为主体色进行设计，导航栏新增装备商城模块，主体改为功能性ICON入口，赛事分类和新闻模块。侧边栏改为排行榜，活动banner入口等。整体风格要求简约，轻量。符合马拉松的调性。
+                        </p>
+                    </article>
+                    <article class="introRight">
+                        <div>
+                            <h2>client</h2>
+                            <p>马拉松报名网</p>
+                        </div>
+                        <div>
+                            <h2>year</h2>
+                            <p>2020.07</p>
+                        </div>
+                        <div>
+                            <h2>links</h2>
+                            <p>http://www.mlsbmw.com/</p>
+                        </div>
+                    </article>
+                </section>
+            </div>
+            <div class="picWrap">
+                <img src="img/web/marathon.png" alt="">
+            </div>
+        </div>
+    </div>
+    <footer id="fixbutton">
+        <div class="fixbutton-wrap">
+            <a href="cctv.html"><img src="img/prev.png" alt=""></a>
+            <a href="k11.html"><img src="img/next.png" alt=""></a>
+        </div>
+    </footer>
+</body>
+<!-- 头部适配 -->
+<script>
+    restheight();
+    window.addEventListener("orientationchange", restheight);
+    window.addEventListener("resize", restheight);
+
+    function restheight() {
+        var winWidth = $(window).width(); //获取当前窗口的宽度跟html的宽度相区分
+        var winHeight = $(window).height(); //获取当前窗口的宽度跟html的宽度相区分
+        $("#web").css("padding-top", winWidth / 8);
+        $(".picWrap").css("top", -winWidth / 6);
+        if (winWidth >= 960) {
+            $(".menuIntro").css("padding-top", winWidth / 10);
+            $(".menuIntro").css("padding-bottom", winWidth / 10);
+        } else if (winWidth < 960) {
+            $(".menuIntro").css("padding-top", winWidth / 20);
+            $(".menuIntro").css("padding-bottom", winWidth / 20);
+        }
+        $(".menuIntro1").css("padding-bottom", winWidth / 5);
+        if (winWidth >= winHeight) {
+            // console.log(winWidth);
+            $("#header").removeClass();
+            $("#header").addClass("headerH");
+            $("#menuBG").removeClass();
+            $("#menuBG").addClass("bgH");
+
+            $(window).resize(function() {
+                winWidth = $(window).width();
+                winHeight = $(window).height();
+                $("#header").removeClass();
+                $("#header").addClass("headerH");
+                $("#menuBG").removeClass();
+                $("#menuBG").addClass("bgH");
+            });
+        } else if (winWidth <= winHeight) {
+            $("#header").removeClass();
+            $("#header").addClass("headerV");
+            $("#menuBG").removeClass();
+            $("#menuBG").addClass("bgV");
+
+            $(window).resize(function() {
+                winWidth = $(window).width();
+                winHeight = $(window).height();
+                $("#header").removeClass();
+                $("#header").addClass("headerV");
+                $("#menuBG").removeClass();
+                $("#menuBG").addClass("bgV");
+            });
+        }
+    }
+</script>

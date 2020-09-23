@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximun-scale=1.0, user-scalable=1">
+    <meta name="JasonWu">
+    <meta http-equiv="Content-Language" content="zh-cn">
+    <meta name="keywords" content="jasonwu,JasonWu的个人网站，jasonwu的作品集，jason's portfolio">
+    <meta name="description" content="熟悉Web端、移动端设计规范和表现方法，对交互层面中的前端技术实现具有强烈兴趣">
+    <link rel="stylesheet" type="text/css" href="css/platform.css">
+    <link rel="stylesheet" type="text/css" href="css/fixbutton.css">
+    <script src="js/jquery-3.1.1.min.js" type="text/javascript"></script>
+    <script src="js/fixbutton.js" type="text/javascript"></script>
+
+    <title>辰安通信云调度系统</title>
+</head>
+<script>
+    resetrem();
+    //切换屏幕 （横屏竖屏）
+    window.addEventListener("orientationchange", resetrem);
+    //resize：屏幕的大小发生改变就触发监听事件resetrem
+    window.addEventListener("resize", resetrem);
+
+    function resetrem() {
+        var html = document.querySelector("html"); //获取到html元素
+        var width = html.getBoundingClientRect().innerwidth; //获取html的宽度
+        if (width >= 1200) {
+            html.style.fontSize = width / 100 + "px";
+        } else if (width >= 960 && width < 1200) {
+            html.style.fontSize = width / 70 + "px";
+        } else if (width < 960) {
+            html.style.fontSize = 16 + "px";
+        }
+    }
+</script>
+
+<body>
+    <header id="header">
+        <img id="menuBG" src="img/platform/menu-bg.png" alt="">
+        <img class="tittleName" src="img/platform/tittle-name.png" alt="">
+        <img class="tittlePc" src="img/platform/tittle-pc.png" alt="">
+    </header>
+    <section id="menuIntro">
+        <article class="introLeft">
+            <h1>辰安通信云调度平台</h1>
+            <p>辰安云平台、应急指挥信息系统等都沿用统一的UI设计规范，有利于团队协作降低沟通成本提升日常工作效率同时能保证整个产品的交互效果和视觉风格提升用户的体验感，并塑造辰安的品牌专业度.
+            </p>
+            <p>在职期间协同设计团队对辰安通信云平台界面风格设定，设计规范的建立，并负责值班值守、会议会商等页面设计与走查工作。</p>
+        </article>
+        <article class="introRight">
+            <div>
+                <h2>client</h2>
+                <p>辰安科技</p>
+            </div>
+            <div>
+                <h2>year</h2>
+                <p>2020.04</p>
+            </div>
+            <div>
+                <h2>links</h2>
+                <p>http://www.gsafety.com/</p>
+            </div>
+        </article>
+    </section>
+    <section id="platform">
+        <img src="img/platform/01color.png" alt="">
+        <img src="img/platform/02font.png" alt="">
+        <img src="img/platform/03button.png" alt="">
+        <img src="img/platform/04input.png" alt="">
+        <img src="img/platform/05select.png" alt="">
+        <img src="img/platform/06choose.png" alt="">
+        <img src="img/platform/07icon.png" alt="">
+        <img src="img/platform/08table.png" alt="">
+        <img src="img/platform/09card.png" alt="">
+        <img src="img/platform/10layout.png" alt="">
+        <img src="img/platform/11box.png" alt="">
+        <img src="img/platform/12components.png" alt="">
+        <img src="img/platform/13default.png" alt="">
+        <img src="img/platform/14architecture.png" alt="">
+        <img src="img/platform/15prototype.png" alt="">
+        <div class="pageshow">
+            <img src="img/platform/16page_01.png" alt="">
+            <img src="img/platform/16page_02.png" alt="">
+            <img src="img/platform/16page_03.png" alt="">
+            <img src="img/platform/16page_04.png" alt="">
+            <img src="img/platform/16page_05.png" alt="">
+            <img src="img/platform/16page_06.png" alt="">
+            <img src="img/platform/16page_07.png" alt="">
+        </div>
+        <img src="img/platform/17projects.png" alt="">
+    </section>
+    <footer id="fixbutton">
+        <div class="fixbutton-wrap">
+            <a href="xiwuzao.html"><img src="img/prev.png" alt=""></a>
+            <a href="visualization.html"><img src="img/next.png" alt=""></a>
+        </div>
+    </footer>
+
+</body>
+<script>
+    restheight();
+    window.addEventListener("orientationchange", restheight);
+    window.addEventListener("resize", restheight);
+
+    function restheight() {
+        var winWidth = $(window).width(); //获取当前窗口的宽度跟html的宽度相区分
+        var winHeight = $(window).height(); //获取当前窗口的宽度跟html的宽度相区分
+        if (winWidth >= 960) {
+            $("#menuIntro").css("padding-top", winWidth / 10);
+            $("#menuIntro").css("padding-bottom", winWidth / 10);
+        } else if (winWidth < 960) {
+            $("#menuIntro").css("padding-top", winWidth / 20);
+            $("#menuIntro").css("padding-bottom", winWidth / 20);
+        }
+        if (winWidth >= winHeight) {
+            // console.log(winWidth);
+            $("#header").removeClass();
+            $("#header").addClass("headerH");
+            $("#menuBG").removeClass();
+            $("#menuBG").addClass("bgH");
+
+            $(window).resize(function() {
+                winWidth = $(window).width();
+                winHeight = $(window).height();
+                $("#header").removeClass();
+                $("#header").addClass("headerH");
+                $("#menuBG").removeClass();
+                $("#menuBG").addClass("bgH");
+            });
+        } else if (winWidth <= winHeight) {
+            $("#header").removeClass();
+            $("#header").addClass("headerV");
+            $("#menuBG").removeClass();
+            $("#menuBG").addClass("bgV");
+
+            $(window).resize(function() {
+                winWidth = $(window).width();
+                winHeight = $(window).height();
+                $("#header").removeClass();
+                $("#header").addClass("headerV");
+                $("#menuBG").removeClass();
+                $("#menuBG").addClass("bgV");
+            });
+        }
+    }
+</script>

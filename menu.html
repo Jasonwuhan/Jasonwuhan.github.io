@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximun-scale=1.0, user-scalable=1">
+    <meta name="JasonWu">
+    <meta http-equiv="Content-Language" content="zh-cn">
+    <meta name="keywords" content="jasonwu,JasonWu的个人网站，jasonwu的作品集，jason's portfolio">
+    <meta name="description" content="熟悉Web端、移动端设计规范和表现方法，对交互层面中的前端技术实现具有强烈兴趣">
+    <link rel="stylesheet" type="text/css" href="css/menu.css">
+    <script src="js/jquery-3.1.1.min.js" type="text/javascript"></script>
+
+    <title>JasonWu的作品集</title>
+</head>
+<script>
+    resetrem();
+    //切换屏幕 （横屏竖屏）
+    window.addEventListener("orientationchange", resetrem);
+    //resize：屏幕的大小发生改变就触发监听事件resetrem
+    window.addEventListener("resize", resetrem);
+
+    function resetrem() {
+        var html = document.querySelector("html"); //获取到html元素
+        var width = html.getBoundingClientRect().innerwidth; //获取html的宽度
+        if (width >= 1280) {
+            html.style.fontSize = width / 100 + "px";
+        } else if (width > 960 && width < 1280) {
+            html.style.fontSize = width / 70 + "px";
+        } else if (width < 960) {
+            html.style.fontSize = 16 + "px";
+        }
+    }
+</script>
+
+<body>
+    <div id=particles-js></div>
+    <div id="menu">
+        <a id="menu-top" href="#"><img src="img/menu/portfolio.png" alt=""></a>
+        <a href="https://706f-portfolio-4go32adkee2a2332-1303075595.tcb.qcloud.la/ui-resume.zip?sign=31f321d9cbc53eda08538d034b002071&t=1600830926" download><img src="img/menu/info.png" alt=""></a>
+        <a href="platform.html"><img src="img/menu/platform.png" alt=""></a>
+        <a href="visualization.html"><img src="img/menu/visualization.png" alt=""></a>
+        <a href="cctv.html"><img src="img/menu/cctv.png" alt=""></a>
+        <a href="web.html"><img src="img/menu/web.png" alt=""></a>
+        <a href="k11.html"><img src="img/menu/k11.png" alt=""></a>
+        <a href="xiwuzao.html"><img src="img/menu/xiwuzao.png" alt=""></a>
+        <div id="menu-bottom">
+            <img src="img/menu/earth.png" alt="">
+        </div>
+    </div>
+</body>
+<script src="js/particles.min.js"></script>
+<script src="js/app.js"></script>

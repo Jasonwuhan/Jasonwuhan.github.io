@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximun-scale=1.0, user-scalable=1">
+    <meta name="JasonWu">
+    <meta http-equiv="Content-Language" content="zh-cn">
+    <meta name="keywords" content="jasonwu,JasonWu的个人网站，jasonwu的作品集，jason's portfolio">
+    <meta name="description" content="熟悉Web端、移动端设计规范和表现方法，对交互层面中的前端技术实现具有强烈兴趣">
+    <link rel="stylesheet" type="text/css" href="css/cctv.css">
+    <link rel="stylesheet" type="text/css" href="css/fixbutton.css">
+    <script src="js/jquery-3.1.1.min.js" type="text/javascript"></script>
+    <script src="js/fixbutton.js" type="text/javascript"></script>
+
+
+    <title>中视央广</title>
+</head>
+<script>
+    resetrem();
+    //切换屏幕 （横屏竖屏）
+    window.addEventListener("orientationchange", resetrem);
+    //resize：屏幕的大小发生改变就触发监听事件resetrem
+    window.addEventListener("resize", resetrem);
+
+    function resetrem() {
+        var html = document.querySelector("html"); //获取到html元素
+        var width = html.getBoundingClientRect().innerwidth; //获取html的宽度
+        if (width >= 1200) {
+            html.style.fontSize = width / 100 + "px";
+        } else if (width >= 960 && width < 1200) {
+            html.style.fontSize = width / 70 + "px";
+        } else if (width < 960) {
+            html.style.fontSize = 16 + "px";
+        }
+    }
+</script>
+
+<body>
+    <header id="header">
+        <img id="menuBG" src="img/cctv/menu-bg.png" alt="">
+    </header>
+    <div id="introWrap">
+        <section class="menuIntro">
+            <article class="introLeft">
+                <h1>中视央广</h1>
+                <p>
+                    中视央广(武汉)传媒有限公司成立于2014年，是中央电视台一级广告代理商，主要承接企业客户广告纪录片拍摄，人物专访及其公司网页设计等定制化需求。 公司综合运用央视、卫视媒体投放经验，与互联网和移动终端相结合，以实现媒介资源的战略性传播。
+                </p>
+                <p>在职期间主要做了什么？<br /> CRM系统设计，中国公用品牌名录Web设计，海码画报微信小程序，“70周年70品牌”活动策划设计等。
+                </p>
+            </article>
+            <article class="introRight">
+                <div>
+                    <h2>client</h2>
+                    <p>中视央广（武汉）传媒有限公司</p>
+                </div>
+                <div>
+                    <h2>year</h2>
+                    <p>2018 - 2019
+                    </p>
+                </div>
+                <div>
+                    <h2>links</h2>
+                    <p>http://www.cctvzsyg.com/</p>
+                </div>
+            </article>
+        </section>
+
+    </div>
+    <div id="cctv">
+        <div class="menuWrap menuWrap01">
+            <div class="menu01">
+                <img src="img/cctv/01pic1.png" alt="">
+                <img src="img/cctv/01pic2.png" alt="">
+            </div>
+        </div>
+        <div class="menuWrap menuWrap02">
+            <div class="menu02">
+                <img src="img/cctv/02pic1.png" alt="">
+                <p>中国公用品牌名录是CCTV《物产中国》项目配套官网，意在通过权威收录展示全国各地区公用品牌，为品牌架设内容专题，有效挖掘、传播区域公用品牌文化积淀、品牌价值及授权使用企业主体，塑造区域特色名片。以及给消费者提供一个有公用品牌授权资质企业的信息查询平台。让消费者不再买到假冒伪劣的优质公用品牌产品，给消费者一个看得见的消费保障。</p>
+                <div class="menu-grid">
+                    <img src="img/cctv/02pic2.png" alt="">
+                    <img src="img/cctv/02pic3.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="menuWrap menuWrap03">
+            <div class="menu03">
+                <img src="img/cctv/03pic1.png" style="mix-blend-mode: multiply;" alt="">
+                <img src="img/cctv/03pic2.png" alt="">
+                <img src="img/cctv/03pic3.png" alt="">
+                <p> 2019适逢新中国成立70周年，重大历史时刻，中国优秀发展中品牌应当响应国家品牌战略布局，助力品牌强国战略，积极担当行业新生力量品牌，向新中国成立70周年献礼，是品牌发展的时代机遇，更是时代赋予中国优秀品牌的时代重任。本次峰会邀请华中地区知名企业家代表涵盖华中地区全行业领域70个优秀企业品牌共聚一堂，帮助企业实施品牌宣传帮扶，并进行全媒体报道转播。 在职期间，全程负责所有活动策划过程中的设计部分，包括LOGO设计、奖杯3D效果的展示，H5设计、邀请函、展板、签到墙、桌卡等物料方面的设计与制作。
+                </p>
+                <img src="img/cctv/03pic4.png" style="mix-blend-mode: multiply;" alt="">
+
+            </div>
+        </div>
+        <div class="menuWrap menuWrap04">
+            <div class="menu04">
+                <img src="img/cctv/04pic1.png" alt="">
+                <img src="img/cctv/04pic2.png" alt="">
+                <img src="img/cctv/04pic3.png" alt="">
+                <img src="img/cctv/04pic4.png" alt="">
+                <img src="img/cctv/04pic5.png" alt="">
+                <img src="img/cctv/04pic6.png" alt="">
+                <img src="img/cctv/04pic7.png" alt="">
+                <img src="img/cctv/04pic8.png" alt="">
+            </div>
+        </div>
+        <div class="menuWrap menuWrap05">
+            <div class="menu05">
+
+                <img src="img/cctv/05pic1.png" alt="">
+                <p>产品名称：灵灵狗物联网锁<br /> 广告用语：家的安全 随时掌控<br /> 品牌调性：安全、美观、智能
+                    <br /> 竞争同行：鹿客（LOOCK）
+                    <br /> 目标消费群：为成年男性，其中30-39岁群体占据主导地位，该年龄段的群体一般已经拥有自己的家庭、房子，且有一定的经济能力，其他年龄段受制于稳定性、经济条件、认知度等因素，购买力稍低；女性群体则受制于更关注自己的刚需产品。目标群体主要分布于中东部等经济及科技发展领先地区。
+                </p>
+                <div class="menuVideo">
+                    <video class="video" poster="video/cctv1.png" controls preload="auto">
+                            <source src="https://706f-portfolio-4go32adkee2a2332-1303075595.tcb.qcloud.la/video/cctv1.mp4?sign=7bd0e6ee2d2927e977af73b6d8b44e69&t=1599656174" type="video/mp4">
+                    </video>
+                    <video class="video" poster="video/cctv2.png" controls preload="auto">
+                        <source src="https://706f-portfolio-4go32adkee2a2332-1303075595.tcb.qcloud.la/video/cctv2.mp4?sign=85f77cc6f4a8c18f2bd72692b97a3edb&t=1599656335" type="video/mp4">
+                    </video>
+                    <img src="img/cctv/05pic4.png" alt="">
+                    <img src="img/cctv/05pic5.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="fixbutton">
+        <div class="fixbutton-wrap">
+            <a href="visualization.html"><img src="img/prev.png" alt=""></a>
+            <a href="web.html"><img src="img/next.png" alt=""></a>
+        </div>
+    </footer>
+</body>
+<!-- 头部适配 -->
+<script>
+    restheight();
+    window.addEventListener("orientationchange", restheight);
+    window.addEventListener("resize", restheight);
+
+    function restheight() {
+        var winWidth = $(window).width(); //获取当前窗口的宽度跟html的宽度相区分
+        var winHeight = $(window).height(); //获取当前窗口的宽度跟html的宽度相区分
+        $(".menuWrap").css("padding-top", winWidth / 10);
+        $(".menuWrap").css("padding-bottom", winWidth / 10);
+        if (winWidth >= 960) {
+            $(".menuIntro").css("padding-top", winWidth / 10);
+            $(".menuIntro").css("padding-bottom", winWidth / 10);
+        } else if (winWidth < 960) {
+            $(".menuIntro").css("padding-top", winWidth / 20);
+            $(".menuIntro").css("padding-bottom", winWidth / 20);
+        }
+        if (winWidth >= winHeight) {
+            // console.log(winWidth);
+            $("#header").removeClass();
+            $("#header").addClass("headerH");
+            $("#menuBG").removeClass();
+            $("#menuBG").addClass("bgH");
+
+            $(window).resize(function() {
+                winWidth = $(window).width();
+                winHeight = $(window).height();
+                $("#header").removeClass();
+                $("#header").addClass("headerH");
+                $("#menuBG").removeClass();
+                $("#menuBG").addClass("bgH");
+            });
+        } else if (winWidth <= winHeight) {
+            $("#header").removeClass();
+            $("#header").addClass("headerV");
+            $("#menuBG").removeClass();
+            $("#menuBG").addClass("bgV");
+
+            $(window).resize(function() {
+                winWidth = $(window).width();
+                winHeight = $(window).height();
+                $("#header").removeClass();
+                $("#header").addClass("headerV");
+                $("#menuBG").removeClass();
+                $("#menuBG").addClass("bgV");
+            });
+        }
+    }
+</script>

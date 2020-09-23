@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximun-scale=1.0, user-scalable=1">
+    <meta name="JasonWu">
+    <meta http-equiv="Content-Language" content="zh-cn">
+    <meta name="keywords" content="jasonwu,JasonWu的个人网站，jasonwu的作品集，jason's portfolio">
+    <meta name="description" content="熟悉Web端、移动端设计规范和表现方法，对交互层面中的前端技术实现具有强烈兴趣">
+    <link rel="stylesheet" type="text/css" href="css/visualization.css">
+    <link rel="stylesheet" type="text/css" href="css/fixbutton.css">
+    <script src="js/jquery-3.1.1.min.js" type="text/javascript"></script>
+    <script src="js/fixbutton.js" type="text/javascript"></script>
+
+
+    <title>大屏可视化</title>
+</head>
+<script>
+    resetrem();
+    //切换屏幕 （横屏竖屏）
+    window.addEventListener("orientationchange", resetrem);
+    //resize：屏幕的大小发生改变就触发监听事件resetrem
+    window.addEventListener("resize", resetrem);
+
+    function resetrem() {
+        var html = document.querySelector("html"); //获取到html元素
+        var width = html.getBoundingClientRect().innerwidth; //获取html的宽度
+        if (width >= 1200) {
+            html.style.fontSize = width / 100 + "px";
+        } else if (width > 960 && width < 1200) {
+            html.style.fontSize = width / 70 + "px";
+        } else if (width < 960) {
+            html.style.fontSize = 16 + "px";
+        }
+    }
+</script>
+
+<body>
+    <header id="header">
+        <img id="menuBG" src="img/visualization/menu-bg.png" alt="">
+    </header>
+    <section id="menuIntro">
+        <article class="introLeft">
+            <img src="img/visualization/tittle-name.png" alt="">
+            <p>辰安科技源于清华大学、由清华控股的高科技企业，是国际化公共安全产品与服务供应商，专注于为政府和应急相关部门行业、大型企业提供应急管理、城市安全运行监测等软件产品与技术服务。在职期间负责渝中区应急指挥调度系统首页UI设计，GIF动效设；协助团队完成佛山、揭阳等项目中大屏可视化设计及点位图标库的整理工作。</p>
+            <p>在职期间负责渝中区应急指挥调度系统首页UI设计，GIF动效设；协助团队完成佛山、揭阳等项目中大屏可视化设计及点位图标库的整理工作。</p>
+        </article>
+        <article class="introRight">
+            <div>
+                <h2>client</h2>
+                <p>辰安科技</p>
+            </div>
+            <div>
+                <h2>year</h2>
+                <p>2019.12</p>
+            </div>
+            <div>
+                <h2>links</h2>
+                <p>http://www.gsafety.com/</p>
+            </div>
+        </article>
+    </section>
+    <section id="visualization">
+        <article>
+            <div id="title"><img src="img/visualization/01title.png" alt=""></div>
+            <h1 class="subtitle">AE动效设计和CSS Sprites制作</h1>
+            <p class="subtxt">前期根据重庆客户需求，围绕科技感、立体感、渝中区元素等进行设计修改，初期提供5个首页版本，根据反馈定稿如下2种风格进行重点设计。后期配合前端完成中央球形光效动效实现落地。</p>
+            <div class="mainPic">
+                <img src="img/visualization/01pic1.png" alt="">
+                <img src="img/visualization/01gif2.gif" alt="">
+                <img src="img/visualization/01pic3.png" alt="">
+                <img src="img/visualization/01pic4.png" alt="">
+            </div>
+        </article>
+        <article>
+            <div id="title"><img src="img/visualization/02title.png" alt=""></div>
+            <h1 class="subtitle">揭阳市应急管理一张图</h1>
+            <p class="subtxt">
+                按事前、事发、事中、事后四个阶段，然后细分每个阶段，明确每个阶段的关注内容。<br /> 事前：风险监测，风险预警，风险防控，应急资源，应急值守，政务值班。 事发：信息接报，初步研判，应急响应，指挥体系。<br /> 事中：信息汇聚，应急决策，专题研判 ，协同会商，辅助决策，协同指挥，组织救援，救援进展，信息发布。<br /> 事后：善后处置，恢复重建，事件调查，总结评估，事件归档。
+            </p>
+            <img class="mainPic2" src="img/visualization/02pic.png" alt="">
+        </article>
+        <article>
+            <div id="title"><img src="img/visualization/03title.png" alt=""></div>
+            <h1 class="subtitle">高风险企业安全生产监测预警</h1>
+            <p class="subtxt">
+                高风险监管涉及煤矿、非煤矿山、石油、危险化学品、烟花爆竹等各个行业，为了更好的辅助安监部门综合掌控安全生产态势，要支持整合各类安全生产监督管理各要素和信息资源，基于地理信息系统，可将城市街道、地标点、建筑物、机动目标、基础设施、视频数据等要素信息进行详细展现，实现管辖区域内企业、人员、车辆、危险源、应急事件的全面监控。
+            </p>
+            <img class="mainPic2" src="img/visualization/03pic.png" alt="">
+        </article>
+        <article>
+            <div id="title"><img src="img/visualization/04title.png" alt=""></div>
+            <h1 class="subtitle sub-bg">参考配色<img src="img/visualization/04txt1.png" alt=""></h1>
+            <img class="mainPic3" src="img/visualization/04pic1.png" alt="">
+            <h1 class="subtitle sub-bg">图标<img src="img/visualization/04txt2.png" alt=""></h1>
+            <img class="mainPic3" src="img/visualization/04pic2.png" alt="">
+            <h1 class="subtitle sub-bg">弹窗<img src="img/visualization/04txt3.png" alt=""></h1>
+            <img class="mainPic2" src="img/visualization/04pic3.png" alt="">
+            <img class="mainPic3" src="img/visualization/04pic4.png" alt="">
+
+        </article>
+    </section>
+    <footer id="fixbutton">
+        <div class="fixbutton-wrap">
+            <a href="platform.html"><img src="img/prev.png" alt=""></a>
+            <a href="cctv.html"><img src="img/next.png" alt=""></a>
+        </div>
+    </footer>
+</body>
+<script>
+    restheight();
+    window.addEventListener("orientationchange", restheight);
+    window.addEventListener("resize", restheight);
+
+    function restheight() {
+        var winWidth = $(window).width(); //获取当前窗口的宽度跟html的宽度相区分
+        var winHeight = $(window).height(); //获取当前窗口的宽度跟html的宽度相区分
+        if (winWidth >= 960) {
+            $("#menuIntro").css("padding-top", winWidth / 10);
+            $("#menuIntro").css("padding-bottom", winWidth / 10);
+        } else if (winWidth < 960) {
+            $("#menuIntro").css("padding-top", winWidth / 20);
+            $("#menuIntro").css("padding-bottom", winWidth / 20);
+        }
+        if (winWidth >= winHeight) {
+            // console.log(winWidth);
+            $("#header").removeClass();
+            $("#header").addClass("headerH");
+            $("#menuBG").removeClass();
+            $("#menuBG").addClass("bgH");
+
+            $(window).resize(function() {
+                winWidth = $(window).width();
+                winHeight = $(window).height();
+                $("#header").removeClass();
+                $("#header").addClass("headerH");
+                $("#menuBG").removeClass();
+                $("#menuBG").addClass("bgH");
+            });
+        } else if (winWidth <= winHeight) {
+            $("#header").removeClass();
+            $("#header").addClass("headerV");
+            $("#menuBG").removeClass();
+            $("#menuBG").addClass("bgV");
+
+            $(window).resize(function() {
+                winWidth = $(window).width();
+                winHeight = $(window).height();
+                $("#header").removeClass();
+                $("#header").addClass("headerV");
+                $("#menuBG").removeClass();
+                $("#menuBG").addClass("bgV");
+            });
+        }
+    }
+</script>

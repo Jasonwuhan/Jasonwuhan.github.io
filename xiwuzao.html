@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximun-scale=1.0, user-scalable=1">
+    <meta name="JasonWu">
+    <meta http-equiv="Content-Language" content="zh-cn">
+    <meta name="keywords" content="jasonwu,JasonWu的个人网站，jasonwu的作品集，jason's portfolio">
+    <meta name="description" content="熟悉Web端、移动端设计规范和表现方法，对交互层面中的前端技术实现具有强烈兴趣">
+    <link rel="stylesheet" type="text/css" href="css/xiwuzao.css">
+    <link rel="stylesheet" type="text/css" href="css/fixbutton.css">
+    <script src="js/jquery-3.1.1.min.js" type="text/javascript"></script>
+    <script src="js/fixbutton.js" type="text/javascript"></script>
+
+
+    <title>惜物造电商</title>
+</head>
+<script>
+    resetrem();
+    //切换屏幕 （横屏竖屏）
+    window.addEventListener("orientationchange", resetrem);
+    //resize：屏幕的大小发生改变就触发监听事件resetrem
+    window.addEventListener("resize", resetrem);
+
+    function resetrem() {
+        var html = document.querySelector("html"); //获取到html元素
+        var width = html.getBoundingClientRect().innerwidth; //获取html的宽度
+        if (width >= 1200) {
+            html.style.fontSize = width / 100 + "px";
+        } else if (width > 960 && width < 1200) {
+            html.style.fontSize = width / 70 + "px";
+        } else if (width < 960) {
+            html.style.fontSize = 16 + "px";
+        }
+    }
+</script>
+
+<body>
+    <header id="header">
+        <img id="menuBG" src="img/xiwuzao/menu-bg.png" alt="">
+    </header>
+    <div id="introWrap">
+        <section class="menuIntro">
+            <article class="introLeft">
+                <h1>惜物造电商(外包)</h1>
+                <p>
+                    惜物造是一家集茶器系列茶品和居家艺术品研发设计、生产与销售为一体的综合型原创品牌公司。
+                </p>
+                <p>
+                    品牌创立自2015年，由两个创始合伙人经过无数思量和考察，带着一群崇尚简洁随心的设计师，以家为创作对象，在尊重传统家居的同时，创造了“轻灵雅致、简约实用”且略带一丝禅意的家居作品，而这些作品，实践着的是一种叫做“实用东方美学”的理想。
+                </p>
+                <p>该电商项目中整体设计风格需体现“轻灵雅致，简约实用”的产品调性。“惜物”两字，不求多，一件足矣。
+                </p>
+            </article>
+            <article class="introRight">
+                <div>
+                    <h2>client</h2>
+                    <p>惜物造</p>
+                </div>
+                <div>
+                    <h2>year</h2>
+                    <p>2018.01</p>
+                </div>
+                <div>
+                    <h2>links</h2>
+                    <p>http://www.xiwuzao.com/</p>
+                </div>
+            </article>
+        </section>
+
+    </div>
+    <div id="xiwuzao">
+        <div class="mainPic1">
+            <img src="img/xiwuzao/xiwuzao.png" alt="">
+        </div>
+        <div class="mainPic2">
+            <div class="piclt">
+                <img class="xiangqing" src="img/xiwuzao/xiangqing3.png" alt="">
+                <img src="img/xiwuzao/xiangqing4.png" alt="">
+                <img src="img/xiwuzao/xiangqing5.png" alt="">
+            </div>
+            <div class="picgt">
+                <img src="img/xiwuzao/xiangqing1.png" alt="">
+                <img src="img/xiwuzao/xiangqing2.png" alt="">
+
+            </div>
+        </div>
+        <div class="mainPic3">
+            <img src="img/xiwuzao/pingmian1.png" alt="">
+            <img src="img/xiwuzao/pingmian2.png" alt="">
+            <img src="img/xiwuzao/pingmian3.png" alt="">
+            <img src="img/xiwuzao/pingmian4.png" alt="">
+        </div>
+        <div class="mainPic4">
+            <img src="img/xiwuzao/h5qrcode.png" alt="">
+            <img src="img/xiwuzao/h5mobile.png" alt="">
+        </div>
+        <div class="mainPic5">
+            <img src="img/xiwuzao/bot.png" alt="">
+        </div>
+
+    </div>
+    <footer id="fixbutton">
+        <div class="fixbutton-wrap">
+            <a href="k11.html"><img src="img/prev.png" alt=""></a>
+            <a href="platform.html"><img src="img/next.png" alt=""></a>
+        </div>
+    </footer>
+</body>
+<!-- 头部适配 -->
+<script>
+    restheight();
+    window.addEventListener("orientationchange", restheight);
+    window.addEventListener("resize", restheight);
+
+    function restheight() {
+        var winWidth = $(window).width(); //获取当前窗口的宽度跟html的宽度相区分
+        var winHeight = $(window).height(); //获取当前窗口的宽度跟html的宽度相区分
+        $(".mainPic1").css("top", -winWidth / 5);
+        if (winWidth >= 960) {
+            $(".menuIntro").css("padding-top", winWidth / 10);
+            $(".menuIntro").css("padding-bottom", winWidth / 4);
+        } else if (winWidth < 960) {
+            $(".menuIntro").css("padding-top", winWidth / 20);
+            $(".menuIntro").css("padding-bottom", winWidth / 5);
+        }
+        if (winWidth >= winHeight) {
+            // console.log(winWidth);
+            $("#header").removeClass();
+            $("#header").addClass("headerH");
+            $("#menuBG").removeClass();
+            $("#menuBG").addClass("bgH");
+
+            $(window).resize(function() {
+                winWidth = $(window).width();
+                winHeight = $(window).height();
+                $("#header").removeClass();
+                $("#header").addClass("headerH");
+                $("#menuBG").removeClass();
+                $("#menuBG").addClass("bgH");
+            });
+        } else if (winWidth <= winHeight) {
+            $("#header").removeClass();
+            $("#header").addClass("headerV");
+            $("#menuBG").removeClass();
+            $("#menuBG").addClass("bgV");
+
+            $(window).resize(function() {
+                winWidth = $(window).width();
+                winHeight = $(window).height();
+                $("#header").removeClass();
+                $("#header").addClass("headerV");
+                $("#menuBG").removeClass();
+                $("#menuBG").addClass("bgV");
+            });
+        }
+    }
+</script>
