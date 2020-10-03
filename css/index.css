@@ -244,24 +244,45 @@ p {
     background-color: rgba(27, 57, 87, 0.7);
 }
 
+@media screen and (min-width: 960px) {
+    #bottom-layer {
+        height: 2.4rem;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    #bottom-layer {
+        height: 4rem;
+    }
+}
+
 #bottom-layer {
     position: fixed;
     z-index: 1;
     bottom: 0;
     width: 100%;
-    height: 2rem;
     text-align: center;
     font-size: 12px;
+    line-height: 18px;
     color: #778396;
+    text-shadow: 0 1px 2px rgba(27, 57, 87, 1);
 }
 
 #bottom-layer a {
     text-decoration: none;
     color: #778396;
+    display: inline-block;
 }
 
 #bottom-layer a:hover {
     color: #bbbbbb;
+}
+
+#bottom-layer :last-child {
+    background: url(../img/emblem.png) no-repeat center left;
+    -o-background-size: contain;
+    background-size: contain;
+    padding-left: 24px;
 }
 
 #poster {

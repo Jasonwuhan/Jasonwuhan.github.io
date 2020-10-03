@@ -259,6 +259,9 @@ body {
     width: 100%;
     position: absolute;
     z-index: 2;
+    background: url(../img/menu/earth.png) no-repeat center center;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 #menu-bottom img {
@@ -266,8 +269,58 @@ body {
     height: auto;
 }
 
+@media screen and (min-width: 960px) {
+    #bottom-layer {
+        height: 2.4rem;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    #bottom-layer {
+        height: 2.4rem;
+    }
+}
+
+#bottom-layer {
+    position: absolute;
+    z-index: 4;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    line-height: 18px;
+    color: #778396;
+    text-shadow: 0 1px 2px rgba(27, 57, 87, 1);
+}
+
+#bottom-layer a {
+    text-decoration: none;
+    color: #778396;
+    display: inline-block;
+}
+
+#bottom-layer a:hover {
+    color: #bbbbbb;
+}
+
+#bottom-layer :last-child {
+    background: url(../img/emblem.png) no-repeat center left;
+    -o-background-size: contain;
+    background-size: contain;
+    padding-left: 24px;
+}
+
+
+/* #bottom-layer img {
+    width: auto;
+    height: auto;
+    position: relative;
+    top: 2px;
+    margin-right: 4px;
+} */
+
 @media screen and (min-width: 1280px) {
-    #menu a {
+    #menu>a {
         position: relative;
         left: 12%;
         z-index: 3;
@@ -287,7 +340,7 @@ body {
 }
 
 @media screen and (min-width: 960px) and (max-width: 1280px) {
-    #menu a {
+    #menu>a {
         position: relative;
         left: 10%;
         z-index: 3;
@@ -307,7 +360,7 @@ body {
 }
 
 @media screen and (min-width: 768px) and (max-width: 960px) {
-    #menu a {
+    #menu>a {
         position: relative;
         left: 5%;
         z-index: 3;
@@ -327,7 +380,7 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-    #menu a {
+    #menu>a {
         position: relative;
         left: 5%;
         z-index: 3;
